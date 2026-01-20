@@ -1,15 +1,16 @@
-import NavBar from '../components/navbar';
+// app/page.tsx
+import React from 'react';
+import Link from 'next/link';
 
-
-export default function Home() {
+export default function HomePage() {
   return (
-    <div>
-      <NavBar />
-      <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-        <main className="...">
-          {/* Main content goes here */}
-        </main>
-      </div>
-    </div>
+    <main style={{ padding: '2rem', fontFamily: 'Inter, sans-serif' }}>
+      <h1>CPRG 306: Web Development 2 - Assignments</h1>
+      <p style={{ marginTop: '1rem' }}>
+        <Link href="/week2" style={{ color: 'blue', textDecoration: 'underline' }}>
+          Go to Week 2
+        </Link>
+      </p>
+    </main>
   );
 }
