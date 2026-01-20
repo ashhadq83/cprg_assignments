@@ -19,7 +19,7 @@ const StudentInfo: React.FC = () => {
         GitHub:{" "}
         <Link href={student.github}>
           <span style={{ color: 'blue', textDecoration: 'underline', cursor: 'pointer' }}>
-            {student.github}
+            github link
           </span>
         </Link>
       </p>
