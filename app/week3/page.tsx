@@ -6,7 +6,7 @@ const Page: React.FC = () => {
     <main className="relative min-h-screen">
       {/* Background image container */}
       <div
-        className="fixed inset-0 bg-cover bg-center bg-fixed bg-[url('/week3/background.png')]"
+        className="fixed inset-0 bg-cover bg-center bg-fixed bg-[url('/images/background.png')]"
         aria-hidden="true"
       />
 
