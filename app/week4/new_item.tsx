@@ -24,12 +24,6 @@ export default function NewItem() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Validation check
-    if (!name || name.length < 2) {
-      alert("Name must be at least 2 characters");
-      return;
-    }
-
     // Create item object with unique id
     const newItem: Item = {
       id: Date.now(),
@@ -100,7 +94,7 @@ export default function NewItem() {
             {name === "" && nameTouched && (
               <p className="text-red-500 text-sm mt-1">Name is required</p>
             )}
-            {nameTouched && (!name || name.trim().length < 2) && (
+            {(!name || name.trim().length < 2) && nameTouched && (
               <p className="text-red-400 text-sm mt-1">
                 Please enter at least 2 characters
               </p>
