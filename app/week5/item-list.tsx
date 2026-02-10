@@ -60,10 +60,10 @@ export default function ItemList() {
   return (
     <div className="max-w-4xl mx-auto">
       <div className="mb-8">
+        <span className="text-white font-semibold mr-2 whitespace-nowrap">
+          Sort by:
+        </span>
         <div className="flex items-center gap-3 mb-4">
-          <span className="text-white font-semibold mr-2 whitespace-nowrap">
-            Sort by:
-          </span>
           <div className="flex flex-1 gap-3">
             <button
               className={`px-4 py-2 rounded-lg transition-all flex-1 text-center ${sortBy === "name" ? "bg-blue-600 text-white shadow-md" : "bg-gray-200 hover:bg-gray-300"}`}
