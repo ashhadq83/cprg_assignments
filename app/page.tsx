@@ -24,6 +24,11 @@ export default function HomePage() {
           Go to Week 4
         </Link>
       </div>
+      <div className="mt-4">
+        <Link href="/week5" className="text-blue-600 underline">
+          Go to Week 5
+        </Link>
+      </div>
     </main>
   );
 }
