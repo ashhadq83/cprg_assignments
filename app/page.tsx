@@ -93,6 +93,28 @@ export default function HomePage() {
               </span>
             </div>
           </Link>
+
+          {/* Week 6: Added */}
+          <Link
+            href="/week6"
+            className="group relative overflow-hidden bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+          >
+            <div className="absolute inset-0 bg-gradient-to-r from-cyan-600 to-cyan-700 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+            <div className="flex items-center justify-between">
+              <div>
+                <span className="text-3xl mr-3">🔧</span>
+                <span className="font-semibold text-gray-800 text-lg">
+                  Week 6
+                </span>
+                <p className="text-sm text-gray-500 mt-1">
+                  APIs & Data Fetching
+                </p>
+              </div>
+              <span className="text-cyan-600 group-hover:translate-x-1 transition-transform duration-300">
+                →
+              </span>
+            </div>
+          </Link>
         </div>
 
         {/* Footer */}
