@@ -3,134 +3,112 @@ import Link from "next/link";
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50">
+    <main className="min-h-screen bg-slate-900 py-12">
       <div className="max-w-4xl mx-auto p-8">
         {/* Header Section */}
         <div className="mb-12 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-700 to-purple-700 bg-clip-text text-transparent mb-3">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-2">
             CPRG 306: Web Development 2
           </h1>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
-          <p className="text-xl text-gray-600 mt-4 font-light">
-            Assignments & Projects
-          </p>
+          <div className="w-24 h-0.5 bg-gray-300 mx-auto"></div>
+          <p className="text-lg text-white mt-4">Assignments & Projects</p>
         </div>
 
         {/* Week Links Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Link
             href="/week2"
-            className="group relative overflow-hidden bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+            className="block bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow border border-gray-200"
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-700 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
             <div className="flex items-center justify-between">
               <div>
-                <span className="text-3xl mr-3"></span>
-                <span className="font-semibold text-gray-800 text-lg">
+                <span className="font-medium text-gray-800 text-lg">
                   Week 2
                 </span>
-                <p className="text-sm text-gray-500 mt-1">Student Info</p>
+                <p className="text-sm text-gray-500 mt-0.5">Student Info</p>
               </div>
-              <span className="text-blue-600 group-hover:translate-x-1 transition-transform duration-300">
-                →
-              </span>
+              <span className="text-gray-400">→</span>
             </div>
           </Link>
 
           <Link
             href="/week3"
-            className="group relative overflow-hidden bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+            className="block bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow border border-gray-200"
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-green-600 to-green-700 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
             <div className="flex items-center justify-between">
               <div>
-                <span className="text-3xl mr-3">🛒</span>
-                <span className="font-semibold text-gray-800 text-lg">
+                <span className="font-medium text-gray-800 text-lg">
                   Week 3
                 </span>
-                <p className="text-sm text-gray-500 mt-1">Shopping List</p>
+                <p className="text-sm text-gray-500 mt-0.5">Shopping List</p>
               </div>
-              <span className="text-green-600 group-hover:translate-x-1 transition-transform duration-300">
-                →
-              </span>
+              <span className="text-gray-400">→</span>
             </div>
           </Link>
 
           <Link
             href="/week4"
-            className="group relative overflow-hidden bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+            className="block bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow border border-gray-200"
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-purple-700 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
             <div className="flex items-center justify-between">
               <div>
-                <span className="text-3xl mr-3">📝</span>
-                <span className="font-semibold text-gray-800 text-lg">
+                <span className="font-medium text-gray-800 text-lg">
                   Week 4
                 </span>
-                <p className="text-sm text-gray-500 mt-1">Forms & Validation</p>
+                <p className="text-sm text-gray-500 mt-0.5">
+                  Forms & Validation
+                </p>
               </div>
-              <span className="text-purple-600 group-hover:translate-x-1 transition-transform duration-300">
-                →
-              </span>
+              <span className="text-gray-400">→</span>
             </div>
           </Link>
 
           <Link
             href="/week5"
-            className="group relative overflow-hidden bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+            className="block bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow border border-gray-200"
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-red-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
             <div className="flex items-center justify-between">
               <div>
-                <span className="text-3xl mr-3">📊</span>
-                <span className="font-semibold text-gray-800 text-lg">
+                <span className="font-medium text-gray-800 text-lg">
                   Week 5
                 </span>
-                <p className="text-sm text-gray-500 mt-1">Sorting & Grouping</p>
+                <p className="text-sm text-gray-500 mt-0.5">
+                  Sorting & Grouping
+                </p>
               </div>
-              <span className="text-orange-600 group-hover:translate-x-1 transition-transform duration-300">
-                →
-              </span>
+              <span className="text-gray-400">→</span>
             </div>
           </Link>
 
           <Link
             href="/week6"
-            className="group relative overflow-hidden bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+            className="block bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow border border-gray-200"
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-cyan-600 to-cyan-700 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
             <div className="flex items-center justify-between">
               <div>
-                <span className="text-3xl mr-3">🔧</span>
-                <span className="font-semibold text-gray-800 text-lg">
+                <span className="font-medium text-gray-800 text-lg">
                   Week 6
                 </span>
-                <p className="text-sm text-gray-500 mt-1">
+                <p className="text-sm text-gray-500 mt-0.5">
                   APIs & Data Fetching
                 </p>
               </div>
-              <span className="text-cyan-600 group-hover:translate-x-1 transition-transform duration-300">
-                →
-              </span>
+              <span className="text-gray-400">→</span>
             </div>
           </Link>
 
           <Link
             href="/week7"
-            className="group relative overflow-hidden bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+            className="block bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow border border-gray-200"
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-cyan-600 to-cyan-700 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
             <div className="flex items-center justify-between">
               <div>
-                <span className="text-3xl mr-3">🔧</span>
-                <span className="font-semibold text-gray-800 text-lg">
+                <span className="font-medium text-gray-800 text-lg">
                   Week 7
                 </span>
-                <p className="text-sm text-gray-500 mt-1"></p>
+                <p className="text-sm text-gray-500 mt-0.5">Advanced Topics</p>
               </div>
-              <span className="text-cyan-600 group-hover:translate-x-1 transition-transform duration-300">
-                →
-              </span>
+              <span className="text-gray-400">→</span>
             </div>
           </Link>
         </div>
