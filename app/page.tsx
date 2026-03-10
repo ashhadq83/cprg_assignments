@@ -1,7 +1,11 @@
+"use client";
 import React from "react";
 import Link from "next/link";
+import { useUserAuth } from "./week8/_utils/auth-context";
 
 export default function HomePage() {
+  const { user, gitHubSignIn, firebaseSignOut } = useUserAuth();
+
   return (
     <main className="min-h-screen bg-slate-900 py-12">
       <div className="max-w-4xl mx-auto p-8">
@@ -105,6 +109,20 @@ export default function HomePage() {
               <div>
                 <span className="font-medium text-gray-800 text-lg">
                   Week 7
+                </span>
+                <p className="text-sm text-gray-500 mt-0.5">Advanced Topics</p>
+              </div>
+              <span className="text-gray-400">→</span>
+            </div>
+          </Link>
+          <Link
+            href="/week8"
+            className="block bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow border border-gray-200"
+          >
+            <div className="flex items-center justify-between">
+              <div>
+                <span className="font-medium text-gray-800 text-lg">
+                  Week 8
                 </span>
                 <p className="text-sm text-gray-500 mt-0.5">Advanced Topics</p>
               </div>
