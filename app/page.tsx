@@ -129,6 +129,20 @@ export default function HomePage() {
               <span className="text-gray-400">→</span>
             </div>
           </Link>
+          <Link
+            href="/week10"
+            className="block bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow border border-gray-200"
+          >
+            <div className="flex items-center justify-between">
+              <div>
+                <span className="font-medium text-gray-800 text-lg">
+                  Week 10
+                </span>
+                <p className="text-sm text-gray-500 mt-0.5">Advanced Topics</p>
+              </div>
+              <span className="text-gray-400">→</span>
+            </div>
+          </Link>
         </div>
 
         {/* Footer */}
